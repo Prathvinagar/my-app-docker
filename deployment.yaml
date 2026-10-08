@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: my-doc-kuber
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: my-doc-kuber
+
+  template:
+    metadata:
+      labels:
+        app: my-doc-kuber
+
+    spec:
+      containers:
+        - name: my-doc-kuber
+          image: my-react-app:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5173
+
+
