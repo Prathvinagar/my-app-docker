@@ -30,11 +30,12 @@ function App() {
 
   return (
     <div style={{ padding: "30px" }}>
+      
       <h1>React Performance Demo</h1>
 
       <hr />
       <h2>Docker and Kubbernates</h2>
-      
+      <h4>II love my Docker and Kubbernates</h4>
       <h2>1. Counter</h2>
 
       <button onClick={() => setCount((prev) => prev + 1)}>
